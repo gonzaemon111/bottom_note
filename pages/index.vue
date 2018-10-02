@@ -1,25 +1,16 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        bottom_note
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div>
-    </div>
+  <div>
+    <section class="container">
   </section>
+  </div>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import template from '~/layouts/template.vue'
 
 export default {
+  layout: 'template',
   components: {
     AppLogo
   }
@@ -28,7 +19,7 @@ export default {
 
 <style>
 .container {
-  min-height: 100vh;
+  min-height: 0vh;
   display: flex;
   justify-content: center;
   align-items: center;
